@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\PluginInterface">
+      <UniqueIdentifier>{f1c22c9f-a4a8-480c-aa0c-64374554f0b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PluginInterface">
+      <UniqueIdentifier>{dff2109c-9630-411b-8444-68d3861c018a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VSphere">
+      <UniqueIdentifier>{36f9b854-0e62-4714-b518-a480225d0ad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VSphere\DataStructs">
+      <UniqueIdentifier>{ec6a220f-bec2-49c9-9937-dd71a1b1cbfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VSphere\FrameProcessing">
+      <UniqueIdentifier>{e3bd3343-ab40-464d-8a04-7befb472b55e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VSphere\Global">
+      <UniqueIdentifier>{d73143b8-ecdc-4361-a8ed-7666c0e5e931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VSphere\HandlerModules">
+      <UniqueIdentifier>{e0cefa10-9571-4342-b755-e5b143be9354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VSphere\Helpers">
+      <UniqueIdentifier>{73f2a390-c0b8-4888-ad50-e9c747115541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VSphere\ThreadControlers">
+      <UniqueIdentifier>{c78ba7ba-7bc4-4d69-af3c-60fe1d87ca30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VSphere">
+      <UniqueIdentifier>{77a63b40-ee48-42f5-b3d4-a06de545b898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VSphere\DataStructs">
+      <UniqueIdentifier>{11806e76-c870-4387-9b57-62ceee65029a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VSphere\FrameProcessing">
+      <UniqueIdentifier>{fc674af7-6dd6-44b8-a4fe-e58f65d25d6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VSphere\Global">
+      <UniqueIdentifier>{d5906f47-c568-497b-9c3f-d2d07b97ee05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VSphere\HandlerModules">
+      <UniqueIdentifier>{ac03d20d-23ec-4cc5-9058-29a5a7006464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VSphere\Helpers">
+      <UniqueIdentifier>{8bc0ee16-5295-4036-a251-a5ddf777005e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VSphere\ThreadControlers">
+      <UniqueIdentifier>{d683d819-afe1-4a85-b273-10ea7b0f7a37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Irrlicht_see_customirrlicht">
+      <UniqueIdentifier>{968455f7-9f7c-4a2a-b025-320aa2115d04}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\CameraRecord.cpp">
+      <Filter>Source Files\VSphere\DataStructs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\Settings.cpp">
+      <Filter>Source Files\VSphere\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\CameraHandler.cpp">
+      <Filter>Source Files\VSphere\HandlerModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\RecordingHandler.cpp">
+      <Filter>Source Files\VSphere\HandlerModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\StaticDebug.cpp">
+      <Filter>Source Files\VSphere\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\BackgroundReference.cpp">
+      <Filter>Source Files\VSphere\FrameProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\ContoursExtractor.cpp">
+      <Filter>Source Files\VSphere\FrameProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\CustomMath.cpp">
+      <Filter>Source Files\VSphere\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\Benchmarks.cpp">
+      <Filter>Source Files\VSphere\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\LargeRandom.cpp">
+      <Filter>Source Files\VSphere\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\SimpleNamedWindow.cpp">
+      <Filter>Source Files\VSphere\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\PerCamControler.cpp">
+      <Filter>Source Files\VSphere\ThreadControlers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\SphereControler.cpp">
+      <Filter>Source Files\VSphere\ThreadControlers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\VSpherePlugin.cpp">
+      <Filter>Source Files\PluginInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\CameraSource.cpp">
+      <Filter>Source Files\VSphere\DataStructs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\EdgesIdentifier.cpp">
+      <Filter>Source Files\VSphere\FrameProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\RayGenerator.cpp">
+      <Filter>Source Files\VSphere\FrameProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\ModelBuilder.cpp">
+      <Filter>Source Files\VSphere\FrameProcessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Source Files\DirectX11Handler.cpp">
+      <Filter>Source Files\PluginInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Source Files\Ray3D.cpp">
+      <Filter>Source Files\VSphere\DataStructs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\Header Files\simplifyingHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\CameraRecord.h">
+      <Filter>Header Files\VSphere\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\Settings.h">
+      <Filter>Header Files\VSphere\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\CameraHandler.h">
+      <Filter>Header Files\VSphere\HandlerModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\RecordingHandler.h">
+      <Filter>Header Files\VSphere\HandlerModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\StaticDebug.h">
+      <Filter>Header Files\VSphere\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\BackgroundReference.h">
+      <Filter>Header Files\VSphere\FrameProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\CustomMath.h">
+      <Filter>Header Files\VSphere\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\Benchmarks.h">
+      <Filter>Header Files\VSphere\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\LargeRandom.h">
+      <Filter>Header Files\VSphere\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\SimpleNamedWindow.h">
+      <Filter>Header Files\VSphere\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\SphereControler.h">
+      <Filter>Header Files\VSphere\ThreadControlers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\PerCamControler.h">
+      <Filter>Header Files\VSphere\ThreadControlers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\VSpherePlugin.h">
+      <Filter>Header Files\PluginInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\Ray3D.h">
+      <Filter>Header Files\VSphere\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\CameraSource.h">
+      <Filter>Header Files\VSphere\DataStructs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\IrrTypes.h">
+      <Filter>Irrlicht_see_customirrlicht</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\IrrQuaternions.h">
+      <Filter>Irrlicht_see_customirrlicht</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\IrrMath.h">
+      <Filter>Irrlicht_see_customirrlicht</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\matrix4.h">
+      <Filter>Irrlicht_see_customirrlicht</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\IrrCompileConfig.h">
+      <Filter>Irrlicht_see_customirrlicht</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\Vector2d.h">
+      <Filter>Irrlicht_see_customirrlicht</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\Vector3d.h">
+      <Filter>Irrlicht_see_customirrlicht</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\Plane3d.h">
+      <Filter>Irrlicht_see_customirrlicht</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\dimension2d.h">
+      <Filter>Irrlicht_see_customirrlicht</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\aabbox3d.h">
+      <Filter>Irrlicht_see_customirrlicht</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\line3d.h">
+      <Filter>Irrlicht_see_customirrlicht</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\rect.h">
+      <Filter>Irrlicht_see_customirrlicht</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\position2d.h">
+      <Filter>Irrlicht_see_customirrlicht</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\EdgesIdentifier.h">
+      <Filter>Header Files\VSphere\FrameProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\RayGenerator.h">
+      <Filter>Header Files\VSphere\FrameProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\ContoursExtractor.h">
+      <Filter>Header Files\VSphere\FrameProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\ModelBuilder.h">
+      <Filter>Header Files\VSphere\FrameProcessing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\UnityInterface.h">
+      <Filter>Header Files\PluginInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Header Files\DirectX11Handler.h">
+      <Filter>Header Files\PluginInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\IUnityGraphicsD3D11.h">
+      <Filter>Header Files\PluginInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Header Files\customIrrlicht.h">
+      <Filter>Irrlicht_see_customirrlicht</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Source\VSpherePlugin.def">
+      <Filter>Header Files\PluginInterface</Filter>
+    </None>
+  </ItemGroup>
+</Project>

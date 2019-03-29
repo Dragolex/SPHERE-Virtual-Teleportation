@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  DLL_Test.cpp
+c:\users\drarr\dropbox\sphere\projects\unity\vsphere_dll\visualstudioproject\vsphereplugin\dll_test\dll_test.cpp(179): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  DLL_Test.vcxproj -> C:\Users\drarr\Dropbox\Sphere\Projects\UNITY\VSphere_DLL\VisualStudioProject\VSpherePlugin\x64\Debug\DLL_Test.exe
+  DLL_Test.vcxproj -> C:\Users\drarr\Dropbox\Sphere\Projects\UNITY\VSphere_DLL\VisualStudioProject\VSpherePlugin\x64\Debug\DLL_Test.pdb (Full PDB)

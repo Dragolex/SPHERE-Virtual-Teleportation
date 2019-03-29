@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{608CBB7B-5E02-4859-98F8-B68B1BB91C5D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>VSpherePlugin</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;VSPHEREPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GLEW_STATIC;WIN32;_DEBUG;_WINDOWS;_USRDLL;RENDERINGPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(OPENCV_DIR)\..\..\include;..\..\..\Source\Source Files;..\..\..\Source\Header Files</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>../../../Source/VSpherePlugin.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opencv_world310d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>if "$(PlatformShortName)" == "x86" (
+copy / Y "$(TargetPath)" $(SolutionDir)..\..\..\VSphere\Assets\VSpherePlugin\x86\$(TargetFileName)"
+) else (
+copy / Y "$(TargetPath)" $(SolutionDir)..\..\..\VSphere\Assets\VSpherePlugin\x86_64\$(TargetFileName)"
+)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;VSPHEREPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;VSPHEREPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(OPENCV_DIR)\..\..\include;..\..\..\Source\Header Files;..\..\..\Source\Source Files</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opencv_world310.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\lib</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>if "$(PlatformShortName)" == "x86" (
+copy / Y "$(TargetPath)" $(SolutionDir)..\..\..\VSphere\Assets\VSpherePlugin\x86\$(TargetFileName)"
+) else (
+copy / Y "$(TargetPath)" $(SolutionDir)..\..\..\VSphere\Assets\VSpherePlugin\x86_64\$(TargetFileName)"
+)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\Source Files\CameraSource.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\BackgroundReference.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\Benchmarks.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\CameraHandler.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\CameraRecord.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\ContoursExtractor.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\CustomMath.cpp" />
+    <ClCompile Include="..\..\..\source\Source Files\DirectX11Handler.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\EdgesIdentifier.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\LargeRandom.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\ModelBuilder.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\PerCamControler.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\Ray3D.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\RayGenerator.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\RecordingHandler.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\Settings.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\SimpleNamedWindow.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\SphereControler.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\StaticDebug.cpp" />
+    <ClCompile Include="..\..\..\Source\Source Files\VSpherePlugin.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\Header Files\aabbox3d.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\customIrrlicht.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\dimension2d.h" />
+    <ClInclude Include="..\..\..\source\Header Files\DirectX11Handler.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\EdgesIdentifier.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\RayGenerator.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\IrrCompileConfig.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\IrrMath.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\IrrQuaternions.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\IrrTypes.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\line3d.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\matrix4.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\Plane3d.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\position2d.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\Ray3D.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\CameraSource.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\BackgroundReference.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\Benchmarks.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\CameraHandler.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\CameraRecord.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\ContoursExtractor.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\CustomMath.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\ModelBuilder.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\rect.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\IUnityGraphicsD3D11.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\LargeRandom.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\PerCamControler.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\RecordingHandler.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\Settings.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\SimpleNamedWindow.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\simplifyingHeader.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\SphereControler.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\StaticDebug.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\stdafx.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\targetver.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\UnityInterface.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\Vector2d.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\Vector3d.h" />
+    <ClInclude Include="..\..\..\Source\Header Files\VSpherePlugin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Source\VSpherePlugin.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

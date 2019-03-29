@@ -1,0 +1,24 @@
+; File used by Visual Studio plugin builds, mostly for 32-bit
+; to stop mangling the exported function names
+; The structure is based on the official Unity Low-Level Native Plugin example:
+; https://docs.unity3d.com/Manual/NativePluginInterface.html
+; 
+
+
+LIBRARY
+
+EXPORTS
+   UnityPluginLoad
+   UnityPluginUnload
+   PrepareSphere
+   StartSphere
+   QuitSphere
+   SetInternalData
+   GetInternalData
+   RecomputeBackgroundReference
+   ConfigureCamera
+   ConfigureRecordHandler
+   CheckNewModel
+   WaitForNextModel
+   StartRetrievingModel
+   EndRetrievingModel
