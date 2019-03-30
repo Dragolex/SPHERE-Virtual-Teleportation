@@ -5,7 +5,7 @@ SPHERE was my Bachelor Thesis project about generating 3D models from 2D cameras
 I developed a DLL in C++ that accesses the camera streams via OpenCV and computers triangle coordinates of the 3D output (including texture UV coordinates).
 The DLL is usable by an UNITY project which handles the rendering.
 
-The sofwtare part as well as the associated bachelor thesis (the .pdf file) have been graded with an 1.0 (European grading system; 4.0 American grading system).
+The software part as well as the associated bachelor thesis (the .pdf file) have been graded with an 1.0 (European grading system; 4.0 American grading system).
   
 
 # Folders Overview
