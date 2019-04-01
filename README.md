@@ -2,11 +2,15 @@
 
 SPHERE was my Bachelor Thesis project about generating 3D models from 2D cameras input in real time.
 
-I developed a DLL in C++ that accesses the camera streams via OpenCV and computers triangle coordinates of the 3D output (including texture UV coordinates).
+I developed a DLL in C++ that accesses the camera streams via OpenCV and computes triangle coordinates of the 3D output (including texture UV coordinates).
 The DLL is usable by an UNITY project which handles the rendering.
 
 The software part as well as the associated bachelor thesis (the .pdf file) have been graded with an 1.0 (European grading system; 4.0 American grading system).
-  
+
+This image shows how a videoframe of my hand is first turned into contours (with inside/outside metadata), then into 3D rays which are eventually intersected with rays from the secondary camera to result in 3D points surrounding the real shape. 
+![](https://github.com/Drarra/SPHERE-Virtual-Teleportation/blob/master/Linked%20Images/header.png)
+
+## Much more information about the procedure can be read in the bachelor thesis (.pdf file)!
 
 # Folders Overview
 
